@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: #245E41;
+  color: #E4FEF2;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: row-reverse;
+  text-align: center
+}
+
+.left{
+    flex:2;
+    max-width: 18%;
+  }
+
+.right{
+    flex:1;
+    max-width: 12%;
+  }
+.content{
+    flex:5;
+    max-width: 40%;
+    text-align: left;
+    padding: 20px;
+  }
+.photo{
+    flex:4;
+    max-width: 305;
+    padding: 30px;
+  }
+
+img{
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+  
+}
+
+
+@media (max-width: 600px)  {
+
+  .left{
+    flex:100%;
+    max-width: 100%;
+  }
+  .right{
+    display: none;
+  }
+  .content{
+    flex:100%;
+    max-width: 100%;
+    padding: 15px;
+  }
+  .photo{
+    flex:100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+
+}
+
+</style>
+    <title>Photu</title>
+  </head>
+  <body>
+  
+<div class="row">
+
+  <div class="right">
+    right
+  </div>
+
+  <div class="photo">
+    <img src="tenor.gif" alt="">
+  </div>
+
+  <div class="content">
+    <p style="font-size: 1.8rem;">Hi, I'm</p><br>
+    <h1 style="font-size:3rem">KASHIF AHMAD</h1><br>
+    <p style="font-size: 1.5rem;">A Focused and enthusiastic Full Stack 
+      Developer with a keen interest in web and android development and 
+      solving DSA problems.Worked on various technologies like git, 
+      cloud, devops, web-scrapping, etc.
+    </p>
+    <br><br>
+  </div>
+  
+  <div class="left">
+    left
+  </div>
+
+
+</div>    
+
+
+
+
+
+
+
+  </body>
+</html>
