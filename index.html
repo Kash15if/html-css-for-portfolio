@@ -60,10 +60,11 @@ body{
     padding: 30px;
   }
 
-.img1{
+.photo > img{
   width: 70%;
   height: auto;
   border-radius: 50%;
+  border: 10px solid #E4FEF2;
   
 }
 
@@ -80,8 +81,11 @@ p{
 }
 
 .img2{
-  
   text-align: center;
+}
+
+.img2 > img{
+  width: 10rem;
 }
 
 .pNo{
@@ -95,22 +99,22 @@ p{
 }
 
 .logo > img{
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     margin: 20px 0px 20px 0;
 }
-@media (max-width: 800px)  {
+@media (max-width: 600px)  {
 
 h1{
-  font-size: 2.45rem;
+  font-size: 2.5rem;
 }
 
 h5{
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 p{
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
   .left{
@@ -131,6 +135,10 @@ p{
   }
 
 
+.img2 > img{
+  width: 7rem;
+}
+
 }
 
 </style>
@@ -141,14 +149,14 @@ p{
 <div class="row">
 
   <div class="right">
-    <div class="pNo"></div>
+    <div class="pNo" style="background-color: black;"></div>
     <div class="pNo"></div>
     <div class="pNo"></div>
     <div class="pNo"></div>
   </div>
 
   <div class="photo">
-    <img class="img1" src="tenor.gif" alt="">
+    <img class="img1" src="myphoto.jpg" alt="">
   </div>
 
   <div class="content">
@@ -171,7 +179,7 @@ p{
 </div>    
 
 <div  class="img2">
-  <img style="width: 10rem;" src="grp.png" alt="">
+  <img src="grp.png" alt="">
 </div>
 
 
