@@ -25,20 +25,19 @@ body{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 90vh;
+  height: 70vh;
   width: 100vw;
   text-align: center
 }
 
 .left{
     flex:1;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    max-width: 1;
   }
 
   .right{
     flex:1;
+    max-width: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,33 +45,11 @@ body{
   }
 
   .content{
-    flex:10;
-    height: 90vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex:8;
+    max-width: 8;
+    text-align: left;
+    padding: 30px;
   }
-
-.content > .left{
-       flex: 40%;
-       margin: 10px;
-       height: 60%; 
-       background-color: white;
-  }
-.content > .right1{
-      flex: 55%;
-      height: 25%;
-      margin: 10px;
-      background-color: white;
-    }
-.content > .right2{
-      flex: 55%;
-      height: 25%;
-      margin: 10px;
-      background-color: white;
-    }
-
 
   .pNo{
   width: 20px;
@@ -90,27 +67,62 @@ body{
   width: 10rem;
 }
 
+h2{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 720px) {
+
+    .content{
+      flex: 100%;
+    }
+
+    .left{
+      display: none;
+    }
+
+    .right{
+      display: none;
+    }
+    h1{
+      font-size: 1.4rem;
+    }
+
+    h5{
+      font-size: 0.7rem;
+    }
+
+    .downArr > img{
+      width: 7rem;
+    }
+}
+
 </style>
-    <title>4th page</title>
+    <title>2nd page</title>
   </head>
   <body>
-  
+  <h2>Contacts</h2>
 <div class="row">
 
     <div class="left"></div>
 
 
     <div class="content">
-        <div class="left"></div>
-        <div class="right1"></div>
-        <div class="right2"></div>
+        <h1>B.Tech in Computer Science and Engineering</h1>
+        <h5>Expected July 2021</h5>
+        <h5>CGPA:- 7.23/10</h5><br>
+        <h5>Related Coursework:- Data Structure and Algorithm, DBMS, Software Engineering.</h5>
+
+        <br><br>
+
     </div>
     
 
     <div class="right">
         <div class="pNo"></div>
+        <div class="pNo" style="background-color: black;"></div>
         <div class="pNo"></div>
-        <div class="pNo"  style="background-color: black;"></div>
         <div class="pNo"></div>
       </div>
 </div>

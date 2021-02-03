@@ -25,50 +25,50 @@ body{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 90vh;
+  height: 60vh;
   width: 100vw;
   text-align: center
 }
 
-.left{
-    flex:1;
+.row > .left{
+    flex:2.5;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
 
-  .right{
-    flex:1;
+  .row > .right{
+    flex:2.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
   }
 
-  .content{
-    flex:10;
-    height: 90vh;
+  .row > .content{
+    flex:5;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
 
-.content > .left{
-       flex: 40%;
+.content > .top{
+       flex: 100%;
        margin: 10px;
-       height: 60%; 
+       height: 45%; 
        background-color: white;
   }
-.content > .right1{
-      flex: 55%;
-      height: 25%;
+.content > .left{
+      flex: 40%;
+      height: 45%;
       margin: 10px;
       background-color: white;
     }
-.content > .right2{
-      flex: 55%;
-      height: 25%;
+.content > .right{
+      flex: 40%;
+      height: 45%;
       margin: 10px;
       background-color: white;
     }
@@ -90,20 +90,70 @@ body{
   width: 10rem;
 }
 
+h2{
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.AllP{
+  text-align: center;
+  font-size: 3rem;
+}
+
+.AllP > button{
+  width: auto;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  background-color: #E4FEF2;
+  color: #245E41;
+  font-size: 1.35rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+}
+
+
+@media (max-width: 700px) {
+
+  .row > .left{
+    display: none;
+  }
+
+  .row > .right{
+    display: none;
+  }
+
+  .row > .content{
+    flex:100%;
+    padding: 15px;
+  }
+
+  .content > .top{
+       margin: 3px;
+  }
+.content > .left{
+      margin: 3px;
+    }
+.content > .right{
+      margin: 3px;
+    }
+
+}
+
 </style>
     <title>3rd page</title>
   </head>
   <body>
   
+    <h2>Projects</h2>
 <div class="row">
 
     <div class="left"></div>
 
 
     <div class="content">
+        <div class="top"></div>
         <div class="left"></div>
-        <div class="right1"></div>
-        <div class="right2"></div>
+        <div class="right"></div>
     </div>
     
 
@@ -112,7 +162,11 @@ body{
         <div class="pNo"></div>
         <div class="pNo"  style="background-color: black;"></div>
         <div class="pNo"></div>
-      </div>
+    </div>
+</div>
+
+<div class="AllP">
+  <button>All Projects -></button>
 </div>
 
 <div  class="downArr">
