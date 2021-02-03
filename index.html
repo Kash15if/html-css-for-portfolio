@@ -1,8 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />  
     
-<style>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +17,7 @@
 body{
   background-color: #245E41;
   color: #E4FEF2;
+  font-family: 'Poppins', sans-serif;
 }
 
 .row{
@@ -19,7 +25,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   flex-direction: row-reverse;
   text-align: center
@@ -28,17 +34,25 @@ body{
 .left{
     flex:2;
     max-width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
 .right{
     flex:1;
     max-width: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
   }
 .content{
     flex:5;
     max-width: 40%;
     text-align: left;
-    padding: 20px;
+    padding: 30px;
   }
 .photo{
     flex:4;
@@ -46,19 +60,61 @@ body{
     padding: 30px;
   }
 
-img{
-  width: 80%;
+.img1{
+  width: 70%;
   height: auto;
   border-radius: 50%;
   
 }
 
+h1{
+  font-size: 3.5rem; font-weight: bolder;
+}
 
-@media (max-width: 600px)  {
+h5{
+  font-size: 2rem; font-weight: bold;
+}
+
+p{
+  font-size: 1rem; font-weight: 400;
+}
+
+.img2{
+  
+  text-align: center;
+}
+
+.pNo{
+  
+
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 15px 30px 15px 0;
+}
+
+.logo > img{
+    width: 60px;
+    height: 60px;
+    margin: 20px 0px 20px 0;
+}
+@media (max-width: 800px)  {
+
+h1{
+  font-size: 2.45rem;
+}
+
+h5{
+  font-size: 1rem;
+}
+
+p{
+  font-size: 0.8rem;
+}
 
   .left{
-    flex:100%;
-    max-width: 100%;
+    display: none;
   }
   .right{
     display: none;
@@ -66,7 +122,7 @@ img{
   .content{
     flex:100%;
     max-width: 100%;
-    padding: 15px;
+    padding-left: 0px 15px 5px 15px;
   }
   .photo{
     flex:100%;
@@ -85,17 +141,20 @@ img{
 <div class="row">
 
   <div class="right">
-    right
+    <div class="pNo"></div>
+    <div class="pNo"></div>
+    <div class="pNo"></div>
+    <div class="pNo"></div>
   </div>
 
   <div class="photo">
-    <img src="tenor.gif" alt="">
+    <img class="img1" src="tenor.gif" alt="">
   </div>
 
   <div class="content">
-    <p style="font-size: 1.8rem;">Hi, I'm</p><br>
-    <h1 style="font-size:3rem">KASHIF AHMAD</h1><br>
-    <p style="font-size: 1.5rem;">A Focused and enthusiastic Full Stack 
+    <h5 >Hi, I'm</h5>
+    <h1 >Kashif Ahmad</h1>
+    <p>A Focused and enthusiastic Full Stack 
       Developer with a keen interest in web and android development and 
       solving DSA problems.Worked on various technologies like git, 
       cloud, devops, web-scrapping, etc.
@@ -104,13 +163,16 @@ img{
   </div>
   
   <div class="left">
-    left
+    <div class="logo"><img src="facebook.svg" alt=""></div>
+    <div class="logo"><img src="linkedin.svg" alt=""></div>
+    <div class="logo"><img src="github.svg" alt=""></div>
   </div>
-
 
 </div>    
 
-
+<div  class="img2">
+  <img style="width: 10rem;" src="grp.png" alt="">
+</div>
 
 
 
