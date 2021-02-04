@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,400&display=swap" rel="stylesheet">
 
+
+
     <style>
 *{
     margin: 0;
@@ -51,6 +53,24 @@ body{
     padding: 30px;
   }
 
+
+
+  .btns{
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  button{
+      flex: 20%;
+      margin-top: 80px;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      background-color: #E4FEF2;
+      color: #245E41;
+    }
+
   .pNo{
   width: 20px;
   height: 20px;
@@ -72,12 +92,32 @@ h2{
   margin-top: 2rem;
 }
 
+h5{
+  font-size: 1.2rem;
+}
+
 @media (max-width: 720px) {
 
     .content{
       flex: 100%;
     }
 
+    .btns{
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3rem;
+    }
+
+    button{
+      flex: 40%;
+      width: 80%;
+      margin-top: 3px;
+      padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
+      background-color: #E4FEF2;
+      color: #245E41;
+    }
+    
     .left{
       display: none;
     }
@@ -90,7 +130,7 @@ h2{
     }
 
     h5{
-      font-size: 0.7rem;
+      font-size: 1rem;
     }
 
     .downArr > img{
@@ -99,7 +139,7 @@ h2{
 }
 
 </style>
-    <title>2nd page</title>
+    <title>4th page</title>
   </head>
   <body>
   <h2>Contacts</h2>
@@ -109,23 +149,37 @@ h2{
 
 
     <div class="content">
-        <h1>B.Tech in Computer Science and Engineering</h1>
-        <h5>Expected July 2021</h5>
-        <h5>CGPA:- 7.23/10</h5><br>
-        <h5>Related Coursework:- Data Structure and Algorithm, DBMS, Software Engineering.</h5>
 
-        <br><br>
+      <div class="txt">
 
+        <h1>Address: </h1><br>
+        <h5><img src="home.svg" alt="" style="width: 30px; height: auto; margin: 10px 20px 0 10px;"> Carmichael hostel, kolkata-09, West Bengal, India.</h5>
+        <h5><img src="envelope.svg" alt="" style="width: 30px; height: auto; margin: 10px 20px 0 10px;">
+          kash151if@gmail.com, kash15if@yahoo.com.</h5>
+        <h5><img src="telephone.svg" alt="" style="width: 30px; height: auto; margin: 10px 20px 0 10px;">
+          9709813874
+        </h5>
+
+      </div>
+
+      <div class="btns">
+        <button>GFG</button>
+        <button>Leetcode</button>
+        <button>Github</button>
+        <button>Github</button>
+      </div>
     </div>
     
 
     <div class="right">
         <div class="pNo"></div>
+        <div class="pNo"></div>
+        <div class="pNo"></div>
+        <div class="pNo"></div>
         <div class="pNo" style="background-color: black;"></div>
-        <div class="pNo"></div>
-        <div class="pNo"></div>
       </div>
 </div>
+
 
 <div  class="downArr">
     <img src="downArrow.png" alt="">
