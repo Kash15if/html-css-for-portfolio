@@ -80,17 +80,18 @@ p{
   font-size: 1rem; font-weight: 400;
 }
 
-.img2{
-  text-align: center;
+.downArr{
+  position: absolute;
+  bottom:10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
-.img2 > img{
+.downArr > img{
   width: 10rem;
 }
 
 .pNo{
-  
-
     width: 20px;
     height: 20px;
     background-color: white;
@@ -135,14 +136,15 @@ p{
   }
 
   .photo > img{
-  width: 70%;
+  width: 60%;
   height: auto;
   border-radius: 50%;
   border: 5px solid #E4FEF2;
   
 }
 
-.img2 > img{
+
+.downArr > img{
   width: 7rem;
 }
 
@@ -157,6 +159,7 @@ p{
 
   <div class="right">
     <div class="pNo" style="background-color: black;"></div>
+    <div class="pNo"></div>
     <div class="pNo"></div>
     <div class="pNo"></div>
     <div class="pNo"></div>
@@ -185,7 +188,7 @@ p{
 
 </div>    
 
-<div  class="img2">
+<div class="downArr">
   <img src="downArrow.png" alt="">
 </div>
 

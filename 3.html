@@ -83,7 +83,10 @@ body{
 }
 
 .downArr{
-  text-align: center;
+  position: absolute;
+  bottom:10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .downArr > img{
@@ -103,12 +106,16 @@ h2{
 
 .AllP > button{
   width: auto;
-  padding: 0.5rem 2rem 0.5rem 2rem;
   background-color: #E4FEF2;
-  color: #245E41;
-  font-size: 1.35rem;
-  font-weight: 700;
-  border-radius: 0.5rem;
+  color: #000;
+  margin-left: auto;
+  border: none;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 2px;
 }
 
 
@@ -124,7 +131,8 @@ h2{
 
   .row > .content{
     flex:100%;
-    padding: 15px;
+    padding: 0 5% 0 5%;
+    height: 80%;
   }
 
   .content > .top{
@@ -136,6 +144,19 @@ h2{
 .content > .right{
       margin: 3px;
     }
+
+  .downArr > img{
+      width: 7rem;
+    }
+
+  .AllP > button{
+  margin: auto;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 2px;
+}
 
 }
 
@@ -151,9 +172,9 @@ h2{
 
 
     <div class="content">
-        <div class="top"></div>
-        <div class="left"></div>
-        <div class="right"></div>
+        <div class="top"><img src="./proj-gif/covid19.gif" alt="" style="height: 100%; width:100%;"></div>
+        <div class="left"><img src="./proj-gif/quiz.gif" alt="" style="height: 100%; width:100%;"></div>
+        <div class="right"><img src="./proj-gif/portfolio.gif" alt="" style="height: 100%; width:100%;"></div>
     </div>
     
 
@@ -162,11 +183,12 @@ h2{
         <div class="pNo"></div>
         <div class="pNo"  style="background-color: black;"></div>
         <div class="pNo"></div>
+        <div class="pNo"></div>
     </div>
 </div>
 
 <div class="AllP">
-  <button>All Projects -></button>
+  <button>All Projects &#8594;</button>
 </div>
 
 <div  class="downArr">
